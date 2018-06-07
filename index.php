@@ -9,6 +9,7 @@ use Template\Template;
 // Create a new instance of Template
 $template = new Template();
 
-$template->assign('hello', 'Lasse');
+$template->assign('hello', 'Hej');
+$template->assign('name', 'Lasse');
 
-$template->parseFile('./partials/template.html');
+$template->parseFile('./_partials/template.html');
