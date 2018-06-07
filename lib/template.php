@@ -57,7 +57,7 @@ class Template
 
             foreach ($this->vars as $key => $value) {
                 if (!is_array($value)) {
-                    $content = $this->parse($key, (string)$value, $content);
+                    $content = $this->parse($key, $value, $content);
                 }
             }
 
@@ -68,7 +68,7 @@ class Template
     }
 
     /**
-     * Now we need to parse the contents of the file and then using the match function to return the things that we parse from our array.
+     * Now parse the content and replace the placeholders with text.
      *
      * @param $key
      * @param $value
