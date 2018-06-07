@@ -37,8 +37,8 @@ class Template
     /**
      * Now we need to be able to assign a key-value pair, we do that with the help of a function.
      *
-     * @param $key
-     * @param $value
+     * @param $key mixed This is the place holder we want to change
+     * @param $value mixed This is what we replace with.
      */
     public function assign($key, $value)
     {
@@ -48,7 +48,7 @@ class Template
     /**
      * Now for the fun stuff, we need the parser to loop through, we'll also use a function for that.
      *
-     * @param $template_file
+     * @param $template_file mixed location of our template
      */
     public function parseFile($template_file)
     {
@@ -70,10 +70,10 @@ class Template
     /**
      * Now parse the content and replace the placeholders with text.
      *
-     * @param $key
-     * @param $value
-     * @param $string
-     * @return mixed this is our content
+     * @param $key mixed This is the place holder we want to change
+     * @param $value mixed Is what we replace with.
+     * @param $string mixed
+     * @return mixed We return the repleaced content
      */
     private function parse($key, $value, $string)
     {
