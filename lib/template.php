@@ -61,7 +61,7 @@ class Template
                 }
             }
 
-            eval('?> ' . $content . '<?php ');
+            echo $content;
         } else {
             exit('<h1>Template error</h1>');
         }
