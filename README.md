@@ -1,3 +1,4 @@
-# This is only a project I made for a chance on a new job.
+# Lasses Template Parser
 
 Its a pretty mundane Template Parser, that takes as many placeholders as you want to assign.
+It does not do any thing else other than that, it is the only objective in the project.
